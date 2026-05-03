@@ -1,0 +1,227 @@
+/* Novo estilo geral da página */
+body {
+    font-family:'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to right, #eef2f3, #dfe9f3);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header (Cabeçalho e Menu de Navegação Fixo */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 10px 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Flexbox no Menu */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover nos Links */
+nav a:hover {
+    color: #1abc9c;
+}
+
+/* Espaço por causa do menu fixo */
+main {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+/* Seções */
+section {
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Efeito hover nas Seções */
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Listas */
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.cor {
+    display: flex;
+    align-items: center;
+    gap: 12px;    
+}
+
+.cor input[type="color"] {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 70px;
+    height:45px;
+
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #000000;
+    cursor: pointer;
+    padding: 0;
+    overflow: hidden;
+}
+
+.cor input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.cor input [type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 9px;
+}
+
+/* Botões */
+input[type="submit"] {
+    background: #1abc9c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="reset"] {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border: none;;
+    cursor: pointer;
+    transition:0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #16a085;
+}
+
+input[type="reset"]:hover {
+    background:#d14536
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #2c3e50;
+    color: white;
+}
+
+/* Imagems */
+img {
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 5px 0;
+}
+
+/* Galeria com Flexbox */
+section img {
+    display: inline-block;
+}
+
+/* Footer (Rodapé) */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Links Gerais */
+a {
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7s;
+}
+
+/* Contatos com os Ícones */
+.contatos {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.contatos a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.contatos img {
+    width: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: center;
+        align-items: center;
+    }
+
+    form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Tags -->
+        <meta name="description" content="Exercício 02 HTML e CSS">
+        <meta name="author" content="Criado por: Almir Acacio Vilaça Filho">
+
+        <!-- Ícone na head -->
+        <link rel="icon" href="./assets/icons/notas.png">
+
+        <link rel="stylesheet" href="./styles/exercicio_css02.css">
+
+        <title>Estrutura de uma Página HTML com Conteúdo Semântico</title>
+    </head>
+
+    <body>
+        
+        <!-- Cabeçalho -->
+        <header>
+            <h1>Estrutura de uma Página HTML com Conteúdo Semântico</h1>
+
+            <!-- Menu de Navegação -->
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início </a></li>
+                    <li><a href="#listas">Listas </a></li>
+                    <li><a href="#tabela">Tabela</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#midias">Mídias</a></li>
+                    <li><a href="exercicio_html02_pagina2.html"> Próxima Página </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <br><br>
+
+        <!-- Conteúdo Principal -->
+        <main id="inicio">
+            <section>
+                <h2>Boas vindas a este modelo estrutural de uma página HTML!</h2>
+                <p>Esta página agora utiliza tags semânticas para um finalizade de melhor organização.</p>
+            </section>
+
+            <br>
+        
+            <!-- Lista Descritiva com os Links -->
+            <section>
+                <h2>Links de Referência</h2>
+                <dl>
+                    <dt>YouTube: Site onde você pode acompanhar diversos conteúdos de vídeo sobre os mais variados temas por meio de vários canais.</dt>
+                    <dd><a href = "https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd><br>
+
+                    <dt>CNN Brasil: Site com notícias ao vivo do Brasil e do Mundo.</dt>
+                    <dd><a href = "https://www.cnnbrasil.com.br" target="_blank">https://www.cnnbrasil.com.br</a></dd><br>
+                </dl>
+            </section>
+
+            <br>
+
+            <!-- Listas Ordenada e Não Ordenada -->
+            <section id="listas">
+                <h2>Listas</h2><br>
+
+                <h3>Lista Ordenada</h3>
+                <ol>
+                    <li>HTML: Linguagem de Marcação usada para a criação de páginas web.</li>
+                    <li>CSS: Linguagem de Estilo utilizada para estilizar páginas HTML.</li>
+                    <li>JavaScript: Linguagem de programação utilizada para criar a interatividade das páginas.</li>
+                </ol><br>
+
+                <h3>Lista Não Ordenada</h3>
+                <ul>
+                    <li>Estudar HTML e CSS</li>
+                    <li>Aprender JavaScript</li>
+                    <li>Praticar e desenvolver projetos</li>
+                </ul><br>
+            </section>
+
+            <br>
+
+            <!-- Tabela -->
+            <section id="tabela">
+                <h2>Tabela</h2><br>
+                <table border="1">
+                    <tr>
+                        <th>HTML</th>
+                        <th>CSS</th>
+                        <th>JavaScript</th>
+                    </tr>
+
+                    <tr>
+                        <th>Marcação</th>
+                        <th>Estilo</th>
+                        <th>Interatividade</th>
+                    </tr>
+
+                    <tr>
+                        <th>Estrutura</th>
+                        <th>Aparência</th>
+                        <th>Código</th>
+                    </tr>
+                </table><br>
+            </section>
+
+            <!-- Galeria -->
+            <section id="galeria">
+                <h2>Galeria</h2>
+
+                <p>Imagem 1: </p><br>
+                <img src="./assets/images/nature-scenery-1470-x-980-picture-xj5glrytk8qxpzt5.jpg" alt="Imagem de uma cachoeira com o reflexo das estrelas na água."><br>
+
+                <p>Imagem 2: </p><br>
+                <img src="./assets/images/nature-scenery-2048-x-1359-picture-c9sabqffeurt3i8j.jpg" alt="Imagem de um deserto rochoso."><br>
+
+                <p>Imagem 3:</p><br>
+                <img src="./assets/images/fiji-island-pictures-1200-x-861-1f1bmmntq02j0zz8.jpg" alt="Visão aérea das Ilhas Fiji."><br><br>
+            </section>
+
+            <!-- Áudio e Vídeo-->
+            <section id="midias">
+                <h2>Mídias</h2>
+
+                <h3>Vídeo: </h3>
+                <video width="640" height="360" controls>
+                    <source src="./assets/videos/How to Become a FullStack Developer in 2026 Roadmap.mp4" type="video/mp4">
+                </video><br><br>
+
+                <h3>Áudio:</h3>
+                <audio controls>
+                    <source src="./assets/audios/NEFFEX - Don't Wanna Let Myself Down.mp3" type="audio/mpeg">
+                </audio><br><br>
+            </section>
+        </main>
+        
+        <!-- Rodapé -->
+        <footer>
+            <p>© 2026 - Criado por: Almir Acacio Vilaça Filho</p>
+
+            <section>
+                <h2>Contatos:</h2>
+
+                <div class="contatos">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="./assets/icons/facebook.png">
+                        Facebook
+                    </a>
+
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="./assets/icons/instagram.png">
+                        Instagram
+                    </a>
+
+                    <a href="https://www.x.com" target="_blank">
+                        <img src="./assets/icons/twitter.png">
+                        Twitter
+                    </a>    
+                </div>
+
+            </section>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Exercício 02 HTML e CSS">
+        <meta name="author" content="Criado por: Almir Acacio Vilaça Filho">
+        <title>Estrutura de uma Segunda Página HTML</title>
+        <link rel="icon" href="./assets/icons/notas.png">
+        <link rel="stylesheet" href="./styles/exercicio_css02.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Estrutura de uma Página HTML com Conteúdo Semântico - Segunda Página</h1><br>
+            <nav>
+                <ul>
+                    <a href="#input">Botôes de Input</a>
+                    <a href="#formulario">Formulário</a>
+                    <a href="exercicio_html02_index.html">Página Anterior</a>
+                </ul>
+            </nav>
+        </header>
+
+        <br><br><br>
+
+        <main>
+            <section>
+                <h2>Segunda Página</h2><br>
+                <p>Esta é a segunda página do modelo estrutural, que também foi melhorada. Ela contém botões de input de login e um formulário.</p><br>
+            </section>
+
+            <!-- Inputs e Botões -->
+            <section id="input">
+                <h2>Exemplos de Inputs e Botões: </h2><br>
+                <input type="text" placeholder="Digite seu nome"><br><br>
+                <input type="password" placeholder ="Digite sua senha"><br><br>
+                <input type="submit" value="Entrar"><br><br>    
+            </section>
+            
+
+            <!-- Formulário -->
+            <section id="formulario">
+                <h2>Exemplo de Formulário:</h2><br>
+
+                <form>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" required><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" required><br>
+
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" id="senha"><br>
+
+                    <label>Sexo:</label><br>
+                    <label for="masc"><input type="radio" id="masc" name="sexo"> Masculino</label><br>
+                    <label for="fem"><input type="radio" id="fem" name="sexo"> Feminino</label><br>
+
+                    <label for="nascimento">Data de Nascimento:</label><br>
+                    <input type="date" id="nascimento" nome="nascimento"><br>
+
+                    <label>Interesses:</label><br>
+                    <label for="esportes"><input type="checkbox" id="esportes"> Esportes</label><br>
+                    <label for="tecnologia"><input type="checkbox" id="tecnologia"> Tecnologia</label><br>
+                    <label for="cinema"><input type="checkbox" id="cinema"> Cinema</label><br>
+                    <label for="musica"><input type="checkbox" id=musica> Música</label><br>
+
+                    <label>Cor Favorita:</label><br>
+                    <label class="cor"><input type="color" id="cor"></label><br>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar"><br>
+
+                </form>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 - Criado por: Almir Acacio Vilaça Filho</p>
+
+            <section>
+                <h2>Contatos:</h2>
+                
+                <div class="contatos">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="./assets/icons/facebook.png">
+                        Facebook
+                    </a>
+
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="./assets/icons/instagram.png">
+                        Instagram
+                    </a>
+
+                    <a href="https://www.x.com" target="_blank">
+                        <img src="./assets/icons/twitter.png">
+                        Twitter
+                    </a>    
+                </div>
+
+            </section>
+        </footer>
+    </body>
+</html>
+
+
